@@ -4,41 +4,6 @@
 from openpyxl import load_workbook
 import re
 
-
-'''
-a  = 'CRT01'
-b  = '2'
-
-dist = {a:b}
-print(dist,type(dist))
-print(dist['CRT01'])
-
-
-c = '10.0.0.0/24'
-
-d = c.split('/')
-print(d)
-e = d[0]
-f = d[1]
-print(e)
-print(f)
-g = e.split('.')
-print(g)
-h = 32 - int(f)
-i = 2 ** h
-print(i)
-j = g[3]
-print(j)
-
-while int(j) > i:
-	i = i * 2
-	continue
-else:
-	print(i)
-	print(j)
-#如果认为的把网段写错了怎么办？自然是要纠正过来的。	
-'''
-
 def generate_con_sheet(equipment_list,wb):
 	for i in equipment_list:
 		wb.create_sheet(i)
